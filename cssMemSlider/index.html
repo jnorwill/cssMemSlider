@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./compressed/css/style.min.css">
+    <script src="./script.js" defer></script>
     <title>MemSlider</title>
-</head>
-<body>
+  </head>
+  <body class="body">
     <main class="main">
-        <div class="slider">
-            <div class="slider__slide" data-slide="1"></div>
-            <div class="slider__slide" data-slide="2"></div>
-            <div class="slider__slide" data-slide="3"></div>
-            <div class="slider__slide" data-slide="4"></div>
+      <div class="slider">
+        <div class="slider__container flex">
+          <img class="slider__slide" src="./img/mem1.jpg" alt="">
+          <img class="slider__slide" src="./img/mem2.jpg" alt="">
+          <img class="slider__slide" src="./img/mem3.jpg" alt="">
+          <img class="slider__slide" src="./img/mem4.jpg" alt="">
         </div>
-        <div class="text-pagination">
-            <div class="text-container">
-                <p class="text-container__text" data-text="1"></p>
-                <p class="text-container__text" data-text="2"></p>
-                <p class="text-container__text" data-text="3"></p>
-                <p class="text-container__text" data-text="4"></p>
-            </div>
-            <div class="pagination">
-                <div class="pagination__control"></div>
-                <div class="pagination__control"></div>
-                <div class="pagination__control"></div>
-                <div class="pagination__control"></div>
-            </div>
+      </div>
+      <div class="text-pagination flex">
+        <div class="text-container">
+          <p class="text-container__text">Memes should have been attached here</p>
         </div>
+        <div class="pagination flex">
+          <div class="pagination__control-container" data-control="1">
+            <div class="pagination__control" data-control="1"></div>
+          </div>
+          <div class="pagination__control-container" data-control="2">
+            <div class="pagination__control" data-control="2"></div>
+          </div>
+          <div class="pagination__control-container" data-control="3">
+            <div class="pagination__control" data-control="3"></div>
+          </div>
+          <div class="pagination__control-container" data-control="4">
+            <div class="pagination__control" data-control="4"></div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>
